@@ -1,0 +1,251 @@
+/*
+ * CSS personnalisé pour manette PS5 sur GamepadViewer
+ * Thème: Dégradé noir et bleu turquoise (sans fond de manette)
+ */
+
+.controller.ds4 {
+    background: transparent; /* Fond transparent au lieu du dégradé */
+    width: 700px;
+    height: 500px;
+}
+
+.ds4 .triggers {
+    width: 598px;
+    height: 90px;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.ds4 .trigger {
+    width: 99px;
+    height: 100%;
+    background: #30D5C8;
+    opacity: 0.6;
+    display: block;
+    position: absolute;
+    top: 0;
+    border-radius: 12px;
+}
+
+.ds4 .trigger.left {
+    left: 0;
+}
+
+.ds4 .trigger.right {
+    right: 0;
+}
+
+.ds4 .bumper {
+    width: 99px;
+    height: 23px;
+    background: linear-gradient(to bottom, #303030 0%, #30D5C8 100%);
+    opacity: 0.8;
+    position: absolute;
+    top: 20px;
+    border-radius: 8px;
+}
+
+.ds4 .bumper.pressed {
+    background: #30D5C8;
+    opacity: 1;
+}
+
+.ds4 .bumper.left {
+    left: 50px;
+}
+
+.ds4 .bumper.right {
+    right: 50px;
+}
+
+.ds4 .touchpad {
+    width: 300px;
+    height: 160px;
+    position: absolute;
+    left: 200px;
+    top: 75px;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #30D5C8;
+}
+
+.ds4 .touchpad.pressed {
+    background: #30D5C8;
+    box-shadow: 0 0 20px #30D5C8;
+}
+
+.ds4 .meta {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 325px;
+    bottom: 215px;
+    border-radius: 100%;
+    background: linear-gradient(to bottom, #000000 0%, #30D5C8 100%);
+}
+
+.ds4 .meta.pressed {
+    background: #30D5C8;
+    box-shadow: 0 0 10px #30D5C8;
+}
+
+.ds4 .p0 {
+    background: url(https://justehcupcake.github.io/PS5_Display_Pics/ps-black.svg);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 330px;
+    bottom: 220px;
+}
+
+.ds4 .back, .ds4 .start {
+    width: 50px;
+    height: 25px;
+    background: #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 140px;
+}
+
+.ds4 .back.pressed, .ds4 .start.pressed {
+    background: #30D5C8;
+    box-shadow: 0 0 10px #30D5C8;
+}
+
+.ds4 .back {
+    left: 225px;
+}
+
+.ds4 .start {
+    right: 225px;
+}
+
+.ds4 .abxy {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 159px;
+    left: 420px;
+}
+
+.ds4 .button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: #000;
+    border-radius: 100%;
+    box-shadow: 0 0 5px #000;
+}
+
+.ds4 .button.pressed {
+    background: #30D5C8;
+    box-shadow: 0 0 10px #30D5C8;
+}
+
+.ds4 .a {
+    bottom: 0;
+    left: 62.5px;
+}
+
+.ds4 .b {
+    right: 0;
+    bottom: 62.5px;
+}
+
+.ds4 .x {
+    left: 62.5px;
+    top: 0;
+}
+
+.ds4 .y {
+    right: 62.5px;
+    top: 62.5px;
+}
+
+.ds4 .dpad {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    top: 180px;
+    left: 92px;
+}
+
+.ds4 .face {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 8px;
+}
+
+.ds4 .face.pressed {
+    background: #30D5C8;
+    box-shadow: 0 0 10px #30D5C8;
+}
+
+.ds4 .face.up {
+    top: 0;
+    left: 42px;
+}
+
+.ds4 .face.down {
+    bottom: 0;
+    left: 42px;
+}
+
+.ds4 .face.left {
+    left: 0;
+    top: 42px;
+}
+
+.ds4 .face.right {
+    right: 0;
+    top: 42px;
+}
+
+.ds4 .sticks {
+    position: absolute;
+    width: 364px;
+    height: 100px;
+    top: 210px;
+    left: 167px;
+}
+
+.ds4 .stick {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    background: linear-gradient(to bottom, #000000 0%, #30D5C8 100%);
+    border-radius: 100%;
+}
+
+.ds4 .stick.pressed {
+    background: #30D5C8;
+    box-shadow: 0 0 15px #30D5C8;
+}
+
+.ds4 .stick.left {
+    top: 0;
+    left: 0;
+}
+
+.ds4 .stick.right {
+    top: 0;
+    right: 0;
+}
+
+.ds4 .stick.pressed.left, .ds4 .stick.pressed.right {
+    background: #30D5C8;
+}
+
+/* Animation pulsation pour les boutons */
+@keyframes pulse {
+    0% { box-shadow: 0 0 5px #30D5C8; }
+    50% { box-shadow: 0 0 15px #30D5C8; }
+    100% { box-shadow: 0 0 5px #30D5C8; }
+}
+
+.ds4 .button.pressed, .ds4 .face.pressed, .ds4 .stick.pressed {
+    animation: pulse 1s infinite;
+}
